@@ -3,16 +3,43 @@
 <head>
   <title>Dynamic HTML Sample</title>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-  <h1>This is group 7</h1>
-  <p>We are here for the group 7.</p>
+  <h1>This is Group 7</h1>
+  <p>Mini Project</p>
 
   <h2>Plotly Graph</h2>
   <div id="plotlyGraph"></div>
 
   <h2>Plotly Graph Code</h2>
   <pre><code id="plotlyCode"></code></pre>
+
+  <h2>Matplotlib Graph</h2>
+  <img src="images/graph.png" alt="Matplotlib Graph">
+
+  <h2> Table</h2>
+  <table>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+    <tr>
+      <td>Cell 1</td>
+      <td>Cell 2</td>
+    </tr>
+  </table>
+
+  <h2> Equation</h2>
+  <div>
+    <script type="text/tex">
+      E = mc^2
+    </script>
+  </div>
+
+  <h2>Colored  Text</h2>
+  <p>This is <span style="color: red;">red</span> text.</p>
 
   <script>
     // Plotly Graph
@@ -38,30 +65,5 @@
       Plotly.newPlot('plotlyGraph', data, layout);
     `;
   </script>
-
-  <h2>Matplotlib Graph</h2>
-  <img src="images/graph.png" alt="Matplotlib Graph">
-
-  <h2>  Table</h2>
-  <table>
-    <tr>
-      <th>Header 1</th>
-      <th>Header 2</th>
-    </tr>
-    <tr>
-      <td>Cell 1</td>
-      <td>Cell 2</td>
-    </tr>
-  </table>
-
-  <h2>  Equation</h2>
-  <div>
-    <script type="text/tex">
-      E = mc^2
-    </script>
-  </div>
-
-  <h2>Colored   Text</h2>
-  <p>This is <span style="color: red;">red</span> text.</p>
 </body>
 </html>
